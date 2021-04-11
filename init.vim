@@ -143,7 +143,7 @@ language en_US.utf8
 	Plug 'AlessandroYorba/Alduin'
 	Plug 'sainnhe/edge'
 	Plug 'junegunn/seoul256.vim'
-	 let g:seoul256_background = 233
+	 let g:seoul256_background = 235
 	
 	" List ends here. Plugins become visible to Vim after this call.
 	call plug#end()
@@ -172,7 +172,8 @@ endif
 "colorscheme dracula
 "colorscheme wal
 "colorscheme nord
-colorscheme edge
+""colorscheme edge
+colorscheme seoul256
 "set background=dark
 
 
