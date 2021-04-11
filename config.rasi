@@ -1,0 +1,58 @@
+configuration {
+  modi: "run,drun,window";
+  width: 20;
+  font: "BlexMono Nerd Font 12";
+  terminal: "alacritty";
+  disable-history: false;
+  sidebar-mode: true;
+  tokenize: true;
+  m: "-5";
+  line-margin: 2;
+  line-padding: 1;
+  separator-style: "none";
+  hide-scrollbar: true;
+  window-format: "{w} {c}";
+  kb-row-down: "Alt+j"; 
+  kb-row-up: "Alt+k"; 
+}
+
+* {
+  bg: #282a36;
+  fg: #f8f8f2;
+  fg02: #ff79c6;
+  active-background: #6272a4;
+  accent: #131717;
+  background-color: @bg;
+  text-color: @fg;
+  bordercolor: @active-background;
+}
+
+window {
+  padding: 30px;
+  border: 3;
+  border-radius: 5px;
+  border-color: @bordercolor;
+}
+
+prompt, entry {
+  text-color: @fg;
+  padding: 3px;
+}
+
+element {
+  border-radius: 2px;
+  padding: 4px;
+}
+
+element selected {
+  background-color: @active-background;
+  text-color: @bg;
+}
+
+button selected {
+  background-color: @fg02;
+  text-color: @bg;
+  border-radius: 2px;
+  padding: 3px;
+}
+
